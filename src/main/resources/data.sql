@@ -1,5 +1,20 @@
-insert into alien values (101, 'Akash', 'C');
-insert into alien values (102, 'Akshay', 'JAVA');
-insert into alien values (103, 'Parth', 'Python');
-insert into alien values (104, 'Sameer', 'PHP');
-insert into alien values (105, 'Varun', 'Support');
+insert into department values (101, 'IT');
+insert into department values (102, 'Finance');
+insert into department values (103, 'HR');
+insert into department values (104, 'R&D');
+insert into department values (105, 'Marketing');
+insert into department values (106, 'Admin');
+insert into department values (107, 'Support');
+
+insert into employee values (201, 'Akash', 'R&D', 'akash@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (202, 'Akshay', 'R&D', 'akshay@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (203, 'Ram', 'Marketing', 'ram@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (204, 'Shyam', 'Marketing', 'shyam@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (205, 'Varun', 'Support', 'varun@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (206, 'Parth', 'Admin', 'parth@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (207, 'Sameer', 'Support', 'sameer@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (208, 'Shailendra', 'Finance', 'shailendra@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (209, 'Rahul', 'IT', 'rahul@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (210, 'Rajat', 'Finance', 'rajat@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (211, 'Deep', 'HR', 'deep@iiitdmj.ac.in', '08/07/2019');
+insert into employee values (212, 'Pullu', 'HR', 'pullu@iiitdmj.ac.in', '08/07/2019');
