@@ -14,27 +14,27 @@ import com.akash.depemp.dao.EmployeeRepo;
 import com.akash.depemp.models.Employee;
 
 @RestController
-@RequestMapping("/employee/")
+@RequestMapping("/employee")
 public class EmployeeController {
 
 	@Autowired
 	EmployeeRepo empRepo;
 	
 	@GetMapping("/show")
-	public List<Employee> showDepartments()
+	public List<Employee> showEmployees()
 	{
 		return empRepo.findAll();
 	}
 	
-	@PutMapping(path="//update", consumes={"application/json"})
-	public String editDepartment(@RequestBody Employee emp)
+	@PutMapping(path="/update", consumes={"application/json"})
+	public String editEmployee(@RequestBody Employee emp)
 	{
 		empRepo.save(emp);
 		return "Updated employee";
 	}
 	
 	@PostMapping("/add")
-	public String addDepartment(@RequestBody Employee emp)
+	public String addEmployee(@RequestBody Employee emp)
 	{
 		empRepo.save(emp);
 		return "Added employee";
