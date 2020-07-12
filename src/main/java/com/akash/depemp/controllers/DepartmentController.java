@@ -35,7 +35,7 @@ public class DepartmentController {
 		return "Updated department";
 	}
 	
-	@PostMapping("/add")
+	@PostMapping(path="/add", consumes={"application/json"})
 	public Department addDepartment(@RequestBody Department dep)
 	{
 		depRepo.save(dep);
