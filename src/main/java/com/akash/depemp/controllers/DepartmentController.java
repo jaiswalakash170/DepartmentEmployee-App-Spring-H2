@@ -36,9 +36,9 @@ public class DepartmentController {
 	}
 	
 	@PostMapping("/add")
-	public String addDepartment(@RequestBody Department dep)
+	public Department addDepartment(@RequestBody Department dep)
 	{
 		depRepo.save(dep);
-		return "Added department";
+		return dep;
 	}
 }
