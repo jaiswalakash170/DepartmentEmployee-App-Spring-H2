@@ -1,11 +1,13 @@
 package com.akash.depemp.models;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
 public class Employee {
 	@Id
+	@GeneratedValue
 	private int EmployeeId;
 	
 	private String EmployeeName;
